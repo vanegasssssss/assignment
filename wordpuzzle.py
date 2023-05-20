@@ -7,14 +7,29 @@ for i in range(guess):
     if i != guess:
         print(f" _", end="")
 
-user_guess = input("\nWhat is your guess? ")
-if len(user_guess) == guess:
-    for user in user_guess:
-        for w in word:
-            
+user_guess = ""
+while user_guess != word:
+    listPositionWord = []
+    user_guess = input("\nWhat is your guess? ")
+    if len(user_guess) == guess:
+        # for user in user_guess:
+        #     for w in word: 
+        #         if user == w:
+        #             print(enumerate(word))
+        x=0
+        while x < len(user_guess):
+            x += 1
+            z = 0
+            while z < len(word):
+                if user_guess[x-1] == word[z]:
+                    listPositionWord.append(z)
+                    print(listPositionWord) 
+                z+=1
 
-else:
-    print("Sorry, the guess must have the same number of letters as the secret word.")
+
+
+    else:
+        print("Sorry, the guess must have the same number of letters as the secret word.")
 
 
 # first_letter = user_guess[0]
