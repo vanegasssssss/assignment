@@ -1,4 +1,6 @@
 #print("Welcome to the word puzzle game!\nYou have to guess what the word is and we will give you some hints if you try.\nFor example: If the word you write has some common letters with the word to be guessed and they are in the same place, it will show in UPPERCASE, if the word matches with one of the word to be guessed but is not in the same position it will show in lowercase. If there is no match it won't show anything but underscores '__'\nHave fun!" )
+
+#HOLA VANEGAS
 word = "bear"
 guess = len(word)
 print(f"Hint: it is an animal", end="")
